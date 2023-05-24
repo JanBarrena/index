@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Estilo para el formulario */
+    body {
+      background-color: orange;
+    }
+    form {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    label, input {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: rgb(255, 255, 255);
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" method="post" class="custom-form">
+    <label class="form-label">Rellene sus datos:</label>
+    <div class="form-group">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" placeholder="el vostre nom" required>
+    </div>
+    <div class="form-group">
+      <label for="surname">Apellidos:</label>
+      <input type="text" id="surname" name="surname" required>
+    </div>
+    <div class="form-group">
+      <label for="minor">Menor o Mayor:</label>
+      <div>
+        <input type="radio" id="minor-menor" name="minor" value="Menor" checked>
+        <label for="minor-menor">Menor</label>
+      </div>
+      <div>
+        <input type="radio" id="minor-mayor" name="minor" value="Mayor">
+        <label for="minor-mayor">Mayor</label>
+      </div>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="entry-type">Que estudias:</label>
+      <select id="entry-type" name="entry-type">
+        <option value="Eso en puig castellar">Estudiante de Eso del Puig Castellar</option>
+        <option value="Bachillerato en Puig Castellar">Estudiante de Bachillerato del Puig Castellar</option>
+        <option value="Administración en Puig Castellar ">Estudiante de Formacion Profesional del Puig Castellar </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="submit" value="Comprar">
+    </div>
+  </form>
+</body>
+</html>
